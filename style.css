@@ -1,0 +1,587 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-webkit-keyframes slide-down {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(1000%);
+            transform: translateY(1000%);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(1000%);
+            transform: translateY(1000%);
+  }
+}
+@-webkit-keyframes slide-page {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: hidden;
+  }
+}
+@keyframes slide-page {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px);
+  }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  75% {
+    -webkit-transform: translate(-5px, 5px);
+            transform: translate(-5px, 5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px);
+  }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  75% {
+    -webkit-transform: translate(-5px, 5px);
+            transform: translate(-5px, 5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes logo-slidedown {
+  from {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+@keyframes logo-slidedown {
+  from {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes logo-secondslidedown {
+  from {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 1;
+  }
+}
+@keyframes logo-secondslidedown {
+  from {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes info-slide-down {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    opacity: 0;
+  }
+}
+@keyframes info-slide-down {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes info-slide-up {
+  from {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes info-slide-up {
+  from {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes change-text {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    visibility: hidden;
+  }
+}
+@keyframes change-text {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes text-coming {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: hidden;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+  }
+}
+@keyframes text-coming {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: hidden;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*
+Theme Name: Epicerie V2
+*/
+/*
+Theme Name: Mon thème
+*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Helvetica;
+  height: 100vh;
+  color: #050634;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.container__hand {
+  width: 300px;
+  height: 300px;
+  background: no-repeat url("images/mains.png");
+  background-size: contain;
+  margin: auto;
+  -webkit-animation: shake 0.5s infinite;
+          animation: shake 0.5s infinite;
+}
+.container__transition {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: #050634;
+  -webkit-animation-name: slide-page;
+          animation-name: slide-page;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+}
+
+.container__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  opacity: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: 2300ms;
+          animation-delay: 2300ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.container__text .title {
+  width: 602px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+}
+.container__text .title__first {
+  visibility: visible;
+  height: 100px;
+  width: 100%;
+  background: no-repeat url("images/logo.png");
+  background-size: contain;
+  -webkit-animation-name: change-text, text-coming;
+          animation-name: change-text, text-coming;
+  -webkit-animation-duration: 1000ms, 1000ms;
+          animation-duration: 1000ms, 1000ms;
+  -webkit-animation-delay: 5000ms, 11500ms;
+          animation-delay: 5000ms, 11500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.container__text .title__second {
+  padding-top: 20px;
+  position: absolute;
+  visibility: hidden;
+  -webkit-animation-name: text-coming, change-text;
+          animation-name: text-coming, change-text;
+  -webkit-animation-duration: 1000ms, 1000ms;
+          animation-duration: 1000ms, 1000ms;
+  -webkit-animation-delay: 5100ms, 11500ms;
+          animation-delay: 5100ms, 11500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.container__text .information {
+  font-size: 20px;
+  font-weight: 500;
+}
+.container__text .information__adresse {
+  margin-top: 2rem;
+  -webkit-animation-name: info-slide-down, info-slide-up;
+          animation-name: info-slide-down, info-slide-up;
+  -webkit-animation-duration: 1000ms, 2000ms;
+          animation-duration: 1000ms, 2000ms;
+  -webkit-animation-delay: 5000ms, 12000ms;
+          animation-delay: 5000ms, 12000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.container__text .information__telephone {
+  margin-top: 2rem;
+  -webkit-animation-name: info-slide-down, info-slide-up;
+          animation-name: info-slide-down, info-slide-up;
+  -webkit-animation-duration: 1000ms, 2000ms;
+          animation-duration: 1000ms, 2000ms;
+  -webkit-animation-delay: 4900ms, 12000ms;
+          animation-delay: 4900ms, 12000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.container__text .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container__text .logo__facebook {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  background: url("images/facebook.png");
+  background-size: contain;
+  -webkit-animation-name: logo-slidedown, logo-secondslidedown;
+          animation-name: logo-slidedown, logo-secondslidedown;
+  -webkit-animation-duration: 2500ms, 2500ms;
+          animation-duration: 2500ms, 2500ms;
+  -webkit-animation-delay: 3000ms, 12500ms;
+          animation-delay: 3000ms, 12500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+.container__text .logo__instagram {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  background: url("images/instagram.png");
+  background-size: contain;
+  -webkit-animation-name: logo-slidedown, logo-secondslidedown;
+          animation-name: logo-slidedown, logo-secondslidedown;
+  -webkit-animation-duration: 2500ms, 2500ms;
+          animation-duration: 2500ms, 2500ms;
+  -webkit-animation-delay: 3150ms, 12500ms;
+          animation-delay: 3150ms, 12500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.container__images {
+  position: fixed;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.container__images .image {
+  -webkit-animation-name: slide-down;
+          animation-name: slide-down;
+}
+.container__images .image1 {
+  width: 150px;
+  height: 150px;
+  background: no-repeat url("images/04.png");
+  background-size: contain;
+  -webkit-animation-duration: 20000ms;
+          animation-duration: 20000ms;
+  position: relative;
+  top: -200px;
+}
+.container__images .image2 {
+  width: 200px;
+  height: 200px;
+  background: no-repeat url("images/01.png");
+  background-size: contain;
+  -webkit-animation-duration: 20000ms;
+          animation-duration: 20000ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  position: relative;
+  top: -300px;
+}
+.container__images .image3 {
+  width: 400px;
+  height: 400px;
+  background: no-repeat url("images/03.png");
+  background-size: contain;
+  -webkit-animation-duration: 30000ms;
+          animation-duration: 30000ms;
+  position: relative;
+  top: -300px;
+}
+.container__images .image4 {
+  width: 400px;
+  height: 400px;
+  background: no-repeat url("images/04.png");
+  background-size: contain;
+  -webkit-animation-duration: 30000ms;
+          animation-duration: 30000ms;
+  position: relative;
+  top: -350px;
+}
+.container__images .image5 {
+  width: 400px;
+  height: 400px;
+  background: no-repeat url("images/02.png");
+  background-size: contain;
+  -webkit-animation-duration: 30000ms;
+          animation-duration: 30000ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  position: relative;
+  top: -400px;
+}
+.container__images .image6 {
+  width: 150px;
+  height: 150px;
+  background: no-repeat url("images/01.png");
+  background-size: contain;
+  -webkit-animation-duration: 20000ms;
+          animation-duration: 20000ms;
+  position: relative;
+  top: -200px;
+}

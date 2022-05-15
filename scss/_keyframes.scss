@@ -1,0 +1,114 @@
+//Animation des bonhommes qui tombent
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(1000%);
+    }
+}
+//Animation de la page de transition qui passe
+@keyframes slide-page {
+    from {
+        transform: translateY(100%);
+        visibility: visible;
+    }
+    to {
+        transform: translateY(-100%);
+        visibility: hidden;
+    }
+}
+//Animation des mains
+@keyframes shake {
+    0% { transform: translate(0, 0) }
+    25% { transform: translate(5px, 5px) }
+    50% { transform: translate(0, 0)  }
+    75% { transform: translate(-5px, 5px) }
+    100% { transform: translate(0, 0) }
+}
+//Animation des logo FB et IG qui descendent et remontent
+@keyframes logo-slidedown {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+//animation des logos FB et IG qui descendent
+@keyframes logo-secondslidedown {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+}
+
+//Animation des informations( adresse et tel) qui descendent
+@keyframes info-slide-down {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+}
+//Animation des informations( adresse et tel) qui remontent
+@keyframes info-slide-up {
+    from {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+//Animation du titre principal qui s'efface vers la gauche
+@keyframes change-text {
+    from {
+        transform: translateX(0);
+        visibility: visible;
+    }
+    to {
+        transform: translateX(-100%);
+        visibility: hidden;
+    }
+}
+//Animation du titre qui arrive de la droite
+@keyframes text-coming {
+    from {
+        transform: translateX(100%);
+        visibility: hidden;
+    }
+    to {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+//Animation du titre qui arrive de la droite
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

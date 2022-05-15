@@ -1,12 +1,33 @@
 {
   "name": "epicerie",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Theme Wordpress Epicerie V_2",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maykeul93/epicerie_v2.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maykeul93/epicerie_v2/issues"
+  },
+  "homepage": "https://github.com/Maykeul93/epicerie_v2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "postcss-assets": "^6.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
 }

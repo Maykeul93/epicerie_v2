@@ -1,0 +1,224 @@
+/*
+Theme Name: Epicerie V2
+*/
+
+/*
+Theme Name: Mon thème
+*/
+
+@use 'reset';
+@use 'keyframes';
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    background-color: #ffffff;
+    font-family: Helvetica;
+    height: 100vh;
+    color: #050634;
+}
+// Container principal
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // Hand container
+    &__hand{
+        width: 300px;
+        height: 300px;
+        background: no-repeat url("images/mains.png");
+        background-size: contain;
+        margin: auto;
+        animation: shake 0.5s infinite;
+    }
+    // Transition container
+    &__transition{
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background-color: #050634;
+        animation-name: slide-page;
+        animation-duration: 2000ms;
+    }
+    
+}
+
+//text container
+.container__text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    animation-name: fadeIn;
+    animation-duration: 1000ms;
+    animation-delay: 2300ms;
+    animation-fill-mode: forwards;
+    //title container
+    .title{
+        width: 602px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        font-size: 60px;
+        font-weight: bold;
+        position: relative;
+        //first title coming
+        &__first{
+            visibility: visible;
+            height: 100px;
+            width: 100%;
+            background: no-repeat url('images/logo.png');
+            background-size: contain;
+            animation-name: change-text, text-coming;
+            animation-duration: 1000ms, 1000ms;
+            animation-delay: 5000ms, 11500ms;
+            animation-fill-mode: forwards;
+        }    
+        // second title coming
+        &__second{
+            padding-top: 20px;
+            position: absolute;
+            visibility: hidden;
+            animation-name: text-coming, change-text;
+            animation-duration: 1000ms, 1000ms;
+            animation-delay: 5100ms, 11500ms;
+            animation-fill-mode: forwards;
+        }
+    }
+    // information container
+    .information{
+        font-size: 20px;
+        font-weight: 500;
+        &__adresse{
+            margin-top: 2rem;
+            animation-name: info-slide-down, info-slide-up ;
+            animation-duration: 1000ms, 2000ms;
+            animation-delay: 5000ms, 12000ms;
+            animation-fill-mode: forwards;
+        }
+        &__telephone{
+            margin-top: 2rem;
+            animation-name: info-slide-down, info-slide-up ;
+            animation-duration: 1000ms, 2000ms;
+            animation-delay: 4900ms, 12000ms;
+            animation-fill-mode: forwards;
+        }
+    }
+    //logo container
+    .logo{
+        display: flex;
+        justify-content: center;
+        &__facebook{
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            background: url('images/facebook.png');
+            background-size: contain;
+            animation-name: logo-slidedown, logo-secondslidedown;
+            animation-duration: 2500ms, 2500ms;
+            animation-delay: 3000ms, 12500ms;
+            animation-fill-mode: forwards;
+            opacity: 0;
+
+        }
+        &__instagram{
+            width: 32px;
+            height: 32px;
+            margin-left: 10px;
+            background: url('images/instagram.png');
+            background-size: contain;
+            animation-name: logo-slidedown, logo-secondslidedown;
+            animation-duration: 2500ms, 2500ms;
+            animation-delay: 3150ms, 12500ms;
+            animation-fill-mode: forwards;
+            opacity: 0;
+
+        }
+    }
+}
+//Images container
+.container__images{
+    position: fixed;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    justify-content: space-around;
+    //animation on all images
+    .image{
+        animation-name: slide-down;
+    }
+    // first image
+    .image1{
+        width: 150px;
+        height: 150px;
+        background: no-repeat url("images/04.png");
+        background-size: contain;
+        animation-duration: 20000ms;
+        position: relative;
+        top: -200px;
+    }
+    // second image
+    .image2{
+        width: 200px;
+        height: 200px;
+        background: no-repeat url("images/01.png");
+        background-size: contain;
+        animation-duration: 20000ms;
+        animation-delay: 500ms;
+        position: relative;
+        top: -300px;
+    }
+    //third image
+    .image3{
+        width: 400px;
+        height: 400px;
+        background: no-repeat url("images/03.png");
+        background-size: contain;
+        animation-duration: 30000ms;
+        position: relative;
+        top: -300px;
+    }
+    // fourth image
+    .image4{
+        width: 400px;
+        height: 400px;
+        background: no-repeat url("images/04.png");
+        background-size: contain;
+        animation-duration: 30000ms;
+        position: relative;
+        top: -350px;
+    }
+    //fifth image 
+    .image5{
+        width: 400px;
+        height: 400px;
+        background: no-repeat url("images/02.png");
+        background-size: contain;
+        animation-duration: 30000ms;
+        animation-delay: 1000ms;
+        position: relative;
+        top: -400px;
+    }
+    //sixth image
+    .image6{
+        width: 150px;
+        height: 150px;
+        background: no-repeat url("images/01.png");
+        background-size: contain;
+        animation-duration: 20000ms;
+        position: relative;
+        top: -200px;
+    }
+}
+
