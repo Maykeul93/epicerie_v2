@@ -337,6 +337,7 @@ body {
   background-color: #ffffff;
   font-family: Helvetica;
   height: 100vh;
+  width: 100vw;
   color: #050634;
 }
 
@@ -398,6 +399,7 @@ body {
           animation-fill-mode: forwards;
 }
 .container__text .title {
+  margin: auto;
   width: 602px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,6 +511,26 @@ body {
   opacity: 0;
 }
 
+@media only screen and (max-width: 400px) {
+  .container__text {
+    width: 300px;
+  }
+  .container__text .title {
+    width: 250px;
+  }
+  .container__text .title__first {
+    height: 50px;
+  }
+  .container__text .title__second {
+    height: 50px;
+    font-size: 26px;
+    padding-top: 10px;
+  }
+  .container__text .information {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
 .container__images {
   position: fixed;
   z-index: 1;
