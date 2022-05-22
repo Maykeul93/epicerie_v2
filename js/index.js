@@ -17,8 +17,8 @@ window.setTimeout(() => {
     newTitleElement.style.visibility = "visible";
 }, 6000);
 
-let imagesElement  = document.querySelector(".container__images")
+let canvasElement  = document.getElementById('canvas')
 
 window.setTimeout(() => {
-    imagesElement.style.display = "flex";
-}, 4000);
+    canvasElement.style.display = "block";
+}, 6000);

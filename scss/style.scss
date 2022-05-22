@@ -8,6 +8,7 @@ Theme Name: Mon thème
 
 @use 'reset';
 @use 'keyframes';
+@use 'canvas';
 
 * {
     box-sizing: border-box;
@@ -171,79 +172,3 @@ body {
         }
     }
 } 
-//Images container
-.container__images{
-    position: fixed;
-    z-index: 1;
-    display: none;
-    width: 100%;
-    height: 100%;
-    justify-content: space-around;
-    //animation on all images
-    .image{
-        animation-name: slide-down;
-    }
-    // first image
-    .image1{
-        width: 150px;
-        height: 150px;
-        background: no-repeat url("images/04.png");
-        background-size: contain;
-        animation-duration: 20000ms;
-        position: relative;
-        top: -200px;
-    }
-    // second image
-    .image2{
-        width: 200px;
-        height: 200px;
-        background: no-repeat url("images/01.png");
-        background-size: contain;
-        animation-duration: 20000ms;
-        animation-delay: 500ms;
-        position: relative;
-        top: -300px;
-    }
-    //third image
-    .image3{
-        width: 400px;
-        height: 400px;
-        background: no-repeat url("images/03.png");
-        background-size: contain;
-        animation-duration: 30000ms;
-        position: relative;
-        top: -300px;
-    }
-    // fourth image
-    .image4{
-        width: 400px;
-        height: 400px;
-        background: no-repeat url("images/04.png");
-        background-size: contain;
-        animation-duration: 30000ms;
-        position: relative;
-        top: -350px;
-    }
-    //fifth image 
-    .image5{
-        width: 400px;
-        height: 400px;
-        background: no-repeat url("images/02.png");
-        background-size: contain;
-        animation-duration: 30000ms;
-        animation-delay: 1000ms;
-        position: relative;
-        top: -400px;
-    }
-    //sixth image
-    .image6{
-        width: 150px;
-        height: 150px;
-        background: no-repeat url("images/01.png");
-        background-size: contain;
-        animation-duration: 20000ms;
-        position: relative;
-        top: -200px;
-    }
-}
-

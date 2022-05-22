@@ -8,6 +8,7 @@
     <title>La petite épicerie</title>
 </head>
 <body>
+    <canvas id="canvas"></canvas>
 <div class="container">
         <div class="container__hand"></div>
         <div class="container__transition"></div>
@@ -25,15 +26,8 @@
                 <div class="logo__instagram"></div>
             </div>
         </div>
-        <div class="container__images">
-            <div class="image image1"></div>
-            <div class="image image2"></div>
-            <div class="image image3"></div>
-            <div class="image image4"></div>
-            <div class="image image5"></div>
-            <div class="image image6"></div>
-        </div>
     </div>
     <script type="text/javascript" src="wp-content/themes/epicerie/js/index.js"></script>
+    <script type="text/javascript" src="wp-content/themes/epicerie/js/canvas.js"></script>
 </body>
 </html>
