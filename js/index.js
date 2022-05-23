@@ -21,4 +21,4 @@ let canvasElement  = document.getElementById('canvas')
 
 window.setTimeout(() => {
     canvasElement.style.display = "block";
-}, 6000);
+}, 6500);

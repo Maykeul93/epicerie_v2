@@ -362,8 +362,8 @@ body {
   background: no-repeat url("images/mains.png");
   background-size: contain;
   margin: auto;
-  -webkit-animation: shake 0.5s infinite;
-          animation: shake 0.5s infinite;
+  -webkit-animation: shake 0.75s infinite;
+          animation: shake 0.75s infinite;
 }
 .container__transition {
   position: absolute;
@@ -378,6 +378,12 @@ body {
           animation-duration: 2000ms;
 }
 
+@media only screen and (max-width: 480px) {
+  .container__hand {
+    width: 200px;
+    height: 200px;
+  }
+}
 .container__text {
   position: absolute;
   left: 50%;
@@ -431,8 +437,8 @@ body {
           animation-name: change-text, text-coming;
   -webkit-animation-duration: 1000ms, 1000ms;
           animation-duration: 1000ms, 1000ms;
-  -webkit-animation-delay: 5000ms, 11500ms;
-          animation-delay: 5000ms, 11500ms;
+  -webkit-animation-delay: 5000ms, 7500ms;
+          animation-delay: 5000ms, 7500ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -444,8 +450,8 @@ body {
           animation-name: text-coming, change-text;
   -webkit-animation-duration: 1000ms, 1000ms;
           animation-duration: 1000ms, 1000ms;
-  -webkit-animation-delay: 5100ms, 11500ms;
-          animation-delay: 5100ms, 11500ms;
+  -webkit-animation-delay: 5100ms, 7500ms;
+          animation-delay: 5100ms, 7500ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -459,8 +465,8 @@ body {
           animation-name: info-slide-down, info-slide-up;
   -webkit-animation-duration: 1000ms, 2000ms;
           animation-duration: 1000ms, 2000ms;
-  -webkit-animation-delay: 5000ms, 12000ms;
-          animation-delay: 5000ms, 12000ms;
+  -webkit-animation-delay: 5000ms, 9000ms;
+          animation-delay: 5000ms, 9000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -470,8 +476,8 @@ body {
           animation-name: info-slide-down, info-slide-up;
   -webkit-animation-duration: 1000ms, 2000ms;
           animation-duration: 1000ms, 2000ms;
-  -webkit-animation-delay: 4900ms, 12000ms;
-          animation-delay: 4900ms, 12000ms;
+  -webkit-animation-delay: 4900ms, 9000ms;
+          animation-delay: 4900ms, 9000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -489,12 +495,14 @@ body {
   margin-right: 10px;
   background: url("images/facebook.png");
   background-size: contain;
+  -webkit-filter: invert(4%) sepia(87%) saturate(5325%) hue-rotate(208deg) brightness(99%) contrast(115%);
+          filter: invert(4%) sepia(87%) saturate(5325%) hue-rotate(208deg) brightness(99%) contrast(115%);
   -webkit-animation-name: logo-slidedown, logo-secondslidedown;
           animation-name: logo-slidedown, logo-secondslidedown;
   -webkit-animation-duration: 2500ms, 2500ms;
           animation-duration: 2500ms, 2500ms;
-  -webkit-animation-delay: 3000ms, 12500ms;
-          animation-delay: 3000ms, 12500ms;
+  -webkit-animation-delay: 3000ms, 9500ms;
+          animation-delay: 3000ms, 9500ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
@@ -505,12 +513,14 @@ body {
   margin-left: 10px;
   background: url("images/instagram.png");
   background-size: contain;
+  -webkit-filter: invert(4%) sepia(87%) saturate(5325%) hue-rotate(208deg) brightness(99%) contrast(115%);
+          filter: invert(4%) sepia(87%) saturate(5325%) hue-rotate(208deg) brightness(99%) contrast(115%);
   -webkit-animation-name: logo-slidedown, logo-secondslidedown;
           animation-name: logo-slidedown, logo-secondslidedown;
   -webkit-animation-duration: 2500ms, 2500ms;
           animation-duration: 2500ms, 2500ms;
-  -webkit-animation-delay: 3150ms, 12500ms;
-          animation-delay: 3150ms, 12500ms;
+  -webkit-animation-delay: 3150ms, 9500ms;
+          animation-delay: 3150ms, 9500ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;

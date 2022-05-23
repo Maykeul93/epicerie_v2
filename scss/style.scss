@@ -34,7 +34,7 @@ body {
         background: no-repeat url("images/mains.png");
         background-size: contain;
         margin: auto;
-        animation: shake 0.5s infinite;
+        animation: shake 0.75s infinite;
     }
     // Transition container
     &__transition{
@@ -49,7 +49,14 @@ body {
     }
     
 }
-
+@media only screen and (max-width: 480px) {
+    .container{
+        &__hand{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
 //text container
 .container__text{
     position: absolute;
@@ -85,7 +92,7 @@ body {
             background-size: contain;
             animation-name: change-text, text-coming;
             animation-duration: 1000ms, 1000ms;
-            animation-delay: 5000ms, 11500ms;
+            animation-delay: 5000ms, 7500ms;
             animation-fill-mode: forwards;
         }    
         // second title coming
@@ -95,7 +102,7 @@ body {
             visibility: hidden;
             animation-name: text-coming, change-text;
             animation-duration: 1000ms, 1000ms;
-            animation-delay: 5100ms, 11500ms;
+            animation-delay: 5100ms, 7500ms;
             animation-fill-mode: forwards;
         }
     }
@@ -107,14 +114,14 @@ body {
             margin-top: 2rem;
             animation-name: info-slide-down, info-slide-up ;
             animation-duration: 1000ms, 2000ms;
-            animation-delay: 5000ms, 12000ms;
+            animation-delay: 5000ms, 9000ms;
             animation-fill-mode: forwards;
         }
         &__telephone{
             margin-top: 2rem;
             animation-name: info-slide-down, info-slide-up ;
             animation-duration: 1000ms, 2000ms;
-            animation-delay: 4900ms, 12000ms;
+            animation-delay: 4900ms, 9000ms;
             animation-fill-mode: forwards;
         }
     }
@@ -128,9 +135,10 @@ body {
             margin-right: 10px;
             background: url('images/facebook.png');
             background-size: contain;
+            filter: invert(4%) sepia(87%) saturate(5325%) hue-rotate(208deg) brightness(99%) contrast(115%);
             animation-name: logo-slidedown, logo-secondslidedown;
             animation-duration: 2500ms, 2500ms;
-            animation-delay: 3000ms, 12500ms;
+            animation-delay: 3000ms, 9500ms;
             animation-fill-mode: forwards;
             opacity: 0;
 
@@ -141,9 +149,10 @@ body {
             margin-left: 10px;
             background: url('images/instagram.png');
             background-size: contain;
+            filter: invert(4%) sepia(87%) saturate(5325%) hue-rotate(208deg) brightness(99%) contrast(115%);
             animation-name: logo-slidedown, logo-secondslidedown;
             animation-duration: 2500ms, 2500ms;
-            animation-delay: 3150ms, 12500ms;
+            animation-delay: 3150ms, 9500ms;
             animation-fill-mode: forwards;
             opacity: 0;
 
