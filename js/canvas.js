@@ -20,14 +20,14 @@ const randomImageSource = function(){
     return sources[rndInt]
 }
 
-//Nombre d'image max en fond
+//Nombre d'image max en fond en fonction de la taille de l'ecran
 let nbOfImages = null
 if (width <= 480) {
     // mobile
-    nbOfImages = 8;
+    nbOfImages = 12;
     //Tablette
     }else if (width <= 770) {
-    nbOfImages = 10;
+    nbOfImages = 14;
     }else {
     // desktop
     nbOfImages = 20;
