@@ -38,10 +38,10 @@ let images = [];
 for( let i=0; i< nbOfImages; i++){
     // Placement aléatoire sur l'axe x de l'image
     let x = Math.floor(Math.random()*canvas.width) -50;
-    // Placement aléatoire sur l'axe y en commencent au dessus du l'ecran 
-    let y = -Math.floor(Math.random() * ((Y + Y/2) - Y/2) + Y/2) *1.5;
+    // Placement aléatoire sur l'axe y en commencent au dessus de l'ecran 
+    let y = -Math.floor(Math.random() * ((Y + Y/2) - Y/2) + Y/2);
     // Vitesse de descente aléatoire
-    let speed = Math.random() * (0.6 - 0.3) + 0.3;
+    let speed = Math.random() * (0.9 - 0.3) + 0.3;
 
     images[i] = new Images(x, y, speed)
 }
@@ -87,10 +87,14 @@ function draw(){
     }
 }
 // Permet l'initialisation de l'animation
+const fps = 60;
 function update(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     draw();
-    window.requestAnimationFrame(update)
+    // SetTimeOut to limit fps
+    setTimeout(function() {
+        window.requestAnimationFrame(update)
+    }, 1000 / fps);
 }
 // On lance l'animation
 update();
