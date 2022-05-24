@@ -10,13 +10,20 @@ Theme Name: Mon thème
 @use 'keyframes';
 @use 'canvas';
 
+@font-face {
+    font-family: 'GothamBold';
+    src: url("font/gotham/Gotham-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'GothamLight';
+    src: url("font/gotham/Gotham-Light.otf") format("opentype")
+}
 * {
     box-sizing: border-box;
   }
   
 body {
     background-color: #ffffff;
-    font-family: Helvetica;
     height: 100vh;
     width: 100vw;
     color: #050634;
@@ -97,6 +104,7 @@ body {
         }    
         // second title coming
         &__second{
+            font-family: 'GothamBold';
             padding-top: 20px;
             position: absolute;
             visibility: hidden;
@@ -110,6 +118,7 @@ body {
     .information{
         font-size: 20px;
         font-weight: 500;
+        font-family: 'GothamLight';
         &__adresse{
             margin-top: 2rem;
             animation-name: info-slide-down, info-slide-up ;

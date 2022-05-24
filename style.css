@@ -333,6 +333,14 @@ Theme Name: Epicerie V2
 /*
 Theme Name: Mon thème
 */
+@font-face {
+  font-family: "GothamBold";
+  src: url("font/gotham/Gotham-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "GothamLight";
+  src: url("font/gotham/Gotham-Light.otf") format("opentype");
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -340,7 +348,6 @@ Theme Name: Mon thème
 
 body {
   background-color: #ffffff;
-  font-family: Helvetica;
   height: 100vh;
   width: 100vw;
   color: #050634;
@@ -443,6 +450,7 @@ body {
           animation-fill-mode: forwards;
 }
 .container__text .title__second {
+  font-family: "GothamBold";
   padding-top: 20px;
   position: absolute;
   visibility: hidden;
@@ -458,6 +466,7 @@ body {
 .container__text .information {
   font-size: 20px;
   font-weight: 500;
+  font-family: "GothamLight";
 }
 .container__text .information__adresse {
   margin-top: 2rem;
