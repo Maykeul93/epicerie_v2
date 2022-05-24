@@ -41,7 +41,7 @@ for( let i=0; i< nbOfImages; i++){
     // Placement aléatoire sur l'axe y en commencent au dessus de l'ecran 
     let y = -Math.floor(Math.random() * ((Y + Y/2) - Y/2) + Y/2);
     // Vitesse de descente aléatoire
-    let speed = Math.random() * (0.9 - 0.3) + 0.3;
+    let speed = Math.random() * (1.1 - 0.3) + 0.3;
 
     images[i] = new Images(x, y, speed)
 }
@@ -63,6 +63,7 @@ function Images(x, y, speed){
         if(this.y > canvas.height){
             this.y = -100;
             this.x = Math.floor(Math.random()*canvas.width) -50;
+            this.speed = Math.random() * (1.1 - 0.3) + 0.3;
         }
     }
 
