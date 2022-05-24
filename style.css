@@ -480,7 +480,7 @@ body {
           animation-fill-mode: forwards;
 }
 .container__text .information__telephone {
-  margin-top: 2rem;
+  margin-top: 1rem;
   -webkit-animation-name: info-slide-down, info-slide-up;
           animation-name: info-slide-down, info-slide-up;
   -webkit-animation-duration: 1000ms, 2000ms;
@@ -497,6 +497,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: -1rem;
 }
 .container__text .logo__facebook {
   width: 32px;
@@ -553,5 +554,8 @@ body {
   .container__text .information {
     font-size: 12px;
     font-weight: 500;
+  }
+  .container__text .information__adresse {
+    margin-top: 1rem;
   }
 }

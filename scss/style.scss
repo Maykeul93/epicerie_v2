@@ -127,7 +127,7 @@ body {
             animation-fill-mode: forwards;
         }
         &__telephone{
-            margin-top: 2rem;
+            margin-top: 1rem;
             animation-name: info-slide-down, info-slide-up ;
             animation-duration: 1000ms, 2000ms;
             animation-delay: 4900ms, 9000ms;
@@ -138,6 +138,7 @@ body {
     .logo{
         display: flex;
         justify-content: center;
+        margin-top: -1rem;
         &__facebook{
             width: 32px;
             height: 32px;
@@ -187,6 +188,9 @@ body {
         .information{
             font-size: 12px;
             font-weight: 500;
+            &__adresse{
+                margin-top: 1rem;
+            }
         }
     }
 } 
